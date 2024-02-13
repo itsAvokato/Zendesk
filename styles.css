@@ -538,19 +538,27 @@ header ul {
 }
 
 .section8 {
-    min-height: 695px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.section8_item1 {
+.section8_item1 {    
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin-bottom: 16px;
+}
+
+.section8_item1_block1 {
+    width: 127px;
+}
+.section8_item1_block2 {
     max-width: 1083px;
     display: flex;
-    justify-content: space-between;
-    margin: 95px auto;
-    padding: 0 16px;
 }
 
-.section8 ul {
-    width: 153px;
+.section8_item1_block2 ul {
+    width: 183px;
     margin-top: 40px;
 }
 
@@ -676,4 +684,83 @@ header ul {
 }
 .footer article {
     padding: 0 16px;
+}
+
+@media (max-width: 1200px) {
+    .section4_item1 {
+        margin: auto;
+    }
+    header {
+        padding: 0 15px;
+    }
+    .section3_item3 {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .section3_item3_block2{
+        display: none;
+    }
+    .section3 {
+        margin-bottom: 100px 
+    }
+    .section7 {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .section7 img {
+        display: none;
+    }
+    .section7 {
+        max-height: 400px;
+    }
+    
+    .section8 {
+        margin: 70px auto;
+    }
+    .section8_item2 {
+        padding: 0 16px;
+    }
+    .section8_item3 {
+        padding: 0 16px;
+    }
+    .section8_item1 {    
+        display: flex;
+        flex-direction: column;
+    }
+    .section8_item1_block2 {
+        margin: 0 auto;}
+    .section8_item1_block1 {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+    }
+    .section8_item1_block1 h4 {
+        margin-top: 16px;
+        font-size: 32px;
+    }
+    .section8_item1_block1 img{
+        margin-right: 20px;
+        height: 32px;
+    }
+  
+}
+
+@media (max-width: 950px) {
+    .section8_item1_block2 {
+        margin: 0 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .section8_item1_block2 ul {
+        margin: 0 auto;
+    }
+    .section6 {
+        max-width: 800px;
+    }
 }
